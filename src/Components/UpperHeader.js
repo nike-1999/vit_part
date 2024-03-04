@@ -7,7 +7,7 @@ const UpperHeader = () => {
     
     sm:flex-row justify-between items-center text-white font-sans'>
       <div className='text-center lg:ml-80 mb-2 sm:mb-0 sm:ml-4'>
-        <span className='lg:ml-20'>Call US : 0123456789</span>
+        <span className='lg:ml-20 mr-20'>Call US : 0123456789</span>
         <span className='lg:ml-10 '>email: info@vitpark.com</span>
       </div>
       <div className='hidden sm:flex lg:mr-80 text-center sm:text-right'>
