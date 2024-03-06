@@ -20,8 +20,9 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white  p-3 flex flex-wrap justify-between shadow-xl items-center">
-      <div className="flex items-center lg:ml-80">
-        <img src={Logo} alt="Logo" className="h-20 sm:mr-9" />
+      <div className="flex items-center lg:ml-10">
+        <img src={Logo} alt="Logo" className="h-20 
+        sm:mr-9  mr- " />
         {/* <ul className={`hidden lg:flex sm:flex space-x-10 font-serif lg:mt-3 text-[16px] ${sidebarOpen ? 'hidden' : 'block'} md:hidden`}>
           <li>
             <Popover 
@@ -61,9 +62,9 @@ const Navbar = () => {
         </ul> */}
       </div>
       <button className="sm:hidden text-black" onClick={toggleSidebar}>
-        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        {/* <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
+        </svg> */}
       </button>
       {sidebarOpen && (
         <div className={`sm:hidden md:hidden
@@ -77,12 +78,12 @@ const Navbar = () => {
             <button className="bg-[#2080d1] text-black px-6
              py-3 rounded">Know More</button> */}
           </div>
-          <button className="absolute 
+          {/* <button className="absolute 
           top-0 right-0 m-4 text-black" onClick={toggleSidebar}>
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
-          </button>
+          </button> */}
         </div>
       )}
     </nav>

@@ -10,7 +10,7 @@ const UpperFooter = () => {
         <span className='text-[26px]
          
         text-white font-popins font-bold 
-        mb-4 md:mt-10 md:ml-5  lg:mr-10'>
+        mb-4 md:mt-10 md:ml-5 mr-2  lg:mr-10'>
 
 Uncover groundbreaking semiconductor solutions at VIT Park today and innovate.
         </span>
