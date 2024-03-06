@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className='bg-[#252525] text-white'>
       <div className='grid grid-cols-1 lg:grid-cols-3 gap-8 justify-center items-start lg:items-start w-full max-w-screen-xl mx-auto py-8 px-4 lg:px-0'>
-        <ul className="flex flex-col  items-center lg:items-start">
+        <ul className="flex flex-col md:mr-[550px]  items-center lg:items-start">
           <h1 className='mb-8 mr-7 text-[22px] text-[#ea2691] font-bold'>OUR EXPERTISE</h1>
           {/* ea2691 */}
           <div className='text-[17px]'>

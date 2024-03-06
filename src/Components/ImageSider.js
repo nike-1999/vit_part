@@ -81,11 +81,16 @@ const ImageSlider = () => {
           className="w-full h-full bg-gray-700 bg-cover bg-center"
         />
 
-        <div className="absolute   lg:w-full  lg:ml-[400px] text-white px-4 py-2" style={{ bottom: '15%', left: '50%', transform: 'translateX(-50%)' }}>
-          <h2 className="text-3xl ml-10 md:text-2xl lg:text-4xl mb-4 font-bold">{titles[currentImage]}</h2>
-          <p className=" md:text-base
+        <div className="absolute  
+         lg:w-full md:top-40
+           lg:ml-[400px] text-white px-4 py-2" style={{ bottom: '15%', left: '50%', transform: 'translateX(-50%)' }}>
+          <h2 className="text-3xl 
+          
+          ml-10 md:text-4xl lg:text-4xl mb-4 font-bold">{titles[currentImage]}</h2>
+          <p className=" 
           w-[285px]   ml-6 text-[18px]
-          lg:text-2xl lg:w-[1000px]  md:max-w-lg lg:max-w-2xl">{descriptions[currentImage]}</p>
+          lg:text-2xl
+           lg:w-[1100px] md:text-1xl md:w-[700px]   lg:max-w-2xl">{descriptions[currentImage]}</p>
         </div>
       </div>
     </div>
