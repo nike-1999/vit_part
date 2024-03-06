@@ -1,12 +1,12 @@
-import React from 'react'
-import img1 from './images/img1.jpg'
+import React from "react";
+import img1 from "./images/img1_latest.jpg";
 
 const HeroSection2 = () => {
   return (
-    <div>
-      <img src={img1} alt=""  className='object-cover w-full h-[600px]'/>
+    <div className="w-full ">
+      <img src={img1} alt="" className=" object-cover lg:h-[500px] w-full" />
     </div>
-  )
-}
+  );
+};
 
-export default HeroSection2
+export default HeroSection2;

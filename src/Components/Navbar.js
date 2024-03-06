@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
-import { Popover } from 'antd';
-import { DownOutlined } from '@ant-design/icons';
-import Logo from './images/vitpark2.png'
+import React, { useState } from "react";
+import { Popover } from "antd";
+import { DownOutlined } from "@ant-design/icons";
+import Logo from "./images/vitpark2.png";
 
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const productList = [
-    'Moisture Handbook',
-    'Moisture control in drying Application',
-    'Glossary of tern',
-    'Moisture Analyzer for product Drying',
-    'Product 5',
-    'Product 6'
+    "Moisture Handbook",
+    "Moisture control in drying Application",
+    "Glossary of tern",
+    "Moisture Analyzer for product Drying",
+    "Product 5",
+    "Product 6",
   ];
 
   const toggleSidebar = () => {
@@ -21,8 +21,12 @@ const Navbar = () => {
   return (
     <nav className="bg-white  p-3 flex flex-wrap justify-between shadow-xl items-center">
       <div className="flex items-center lg:ml-10">
-        <img src={Logo} alt="Logo" className="h-20 
-        sm:mr-9  mr- " />
+        <img
+          src={Logo}
+          alt="Logo"
+          className="h-20 
+        sm:mr-9  mr- "
+        />
         {/* <ul className={`hidden lg:flex sm:flex space-x-10 font-serif lg:mt-3 text-[16px] ${sidebarOpen ? 'hidden' : 'block'} md:hidden`}>
           <li>
             <Popover 
@@ -67,9 +71,11 @@ const Navbar = () => {
         </svg> */}
       </button>
       {sidebarOpen && (
-        <div className={`sm:hidden md:hidden
+        <div
+          className={`sm:hidden md:hidden
          fixed inset-0 z-50 bg-black bg-opacity-50 flex justify-end
-          ${sidebarOpen ? 'flex' : 'hidden'}`}>
+          ${sidebarOpen ? "flex" : "hidden"}`}
+        >
           <div className="bg-white w-64 flex flex-col p-4">
             {/* <a href="#" className="text-black mb-4">RESOURCES</a>
             <a href="#" className="text-black mb-4">PRODUCTS</a>
@@ -88,6 +94,6 @@ const Navbar = () => {
       )}
     </nav>
   );
-}
+};
 
 export default Navbar;

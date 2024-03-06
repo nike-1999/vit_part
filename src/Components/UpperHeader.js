@@ -1,19 +1,10 @@
-import React from 'react';
+import React from "react";
 
 const UpperHeader = () => {
   return (
-    <div className='w-full
-     h-10 bg-[#282828] flex flex-col 
-    
-    sm:flex-row justify-between items-center text-white font-sans'>
-      <div className='text-center lg:ml-80 mb-2 sm:mb-0 sm:ml-4'>
-        <span className='lg:ml-20 mr-10'>Call US : 9150016223</span>
-        <span className='lg:ml-10 '>email: info@vitpark.com</span>
-      </div>
-      <div className='hidden sm:flex lg:mr-80 text-center sm:text-right'>
-        {/* <span className='mx-4 sm:mx-8'>Blog</span> */}
-        <span>About us</span>
-      </div>
+    <div className="flex justify-between items-center w-full h-10 bg-[#282828] text-white font-sans">
+      <span className="ml-4">Call Us : +91 50016223</span>
+      <span className="mx-4">email: info@vitpark.com</span>
     </div>
   );
 };

@@ -9,26 +9,20 @@ import Navbar from "./Components/Navbar";
 import OurProducts from "./Components/OurProduct";
 import UpperFooter from "./Components/UpperFooter";
 import UpperHeader from "./Components/UpperHeader";
-import { BrowserRouter as Router ,Routes,Route } from "react-router-dom";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div> 
-
-      
-<UpperHeader/>
-<Navbar/>
-<Router>
-  <Routes>
-    <Route path="/" element={<Home/>}/>
-    <Route path="/aboutus" element={<AboutUs/>}/>
-  </Routes>
-</Router>
-<UpperFooter/>
-<Footer/>
-
-     
+    <div className="overflow-hidden">
+      <UpperHeader />
+      <Navbar />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/aboutus" element={<AboutUs />} />
+        </Routes>
+      </Router>
+      <Footer />
     </div>
   );
 }
