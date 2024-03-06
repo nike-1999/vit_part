@@ -20,9 +20,9 @@ const Footer = () => {
         <ul className="flex flex-col items-center lg:items-start">
           <h1 className='mb-8 text-[22px] text-[#ea2691] font-bold'>GET IN TOUCH</h1>
           <div>
-            <li className='text-[17px] mb-4'>A Division of Machine Applications Corporation 3410 Tiffin Ave. - Sandusky, Ohio 44870</li>
+            <li className='text-[17px] mb-4'>Appavoo Apartments, 1/5, Venus Colony 2nd St, Venus Colony, Alwarpet, Chennai, Tamil Nadu 600018</li>
             <div className='flex gap-9'>
-              <li className='text-[17px]'>Ph: 419.621.2322</li>
+              <li className='text-[17px]'>Ph: 9150016223</li>
               <li className='text-[17px]'>mail:  info@vitpark.com</li>
             </div>
           </div>
