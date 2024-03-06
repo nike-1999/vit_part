@@ -4,7 +4,7 @@ import '../index.css'; // Assuming you have your Tailwind CSS imported in index.
 
 const HeroSection = () => {
   return (
-    <div className="relative h-[400px] mb-1  bg-gray-900">
+    <div className="relative h-[400px]  mb-1  bg-gray-900">
       {/* Hero image */}
       <img
         className="object-cover w-full h-[600px]"
@@ -13,7 +13,7 @@ const HeroSection = () => {
       />
 
       {/* Hero content */}
-      <div className="absolute lg:mt-40
+      <div className="absolute lg:mt-40 md:mt-40
       inset-0 flex justify-start items-center text-left px-6 md:px-0">
         <div className="text-white md:ml-40  md:mb-0 ">
           <h1 className="text-3xl md:text-4xl font-thin  mb-6">

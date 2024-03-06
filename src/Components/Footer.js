@@ -23,7 +23,7 @@ const Footer = () => {
             <li className='text-[17px] mb-4'>A Division of Machine Applications Corporation 3410 Tiffin Ave. - Sandusky, Ohio 44870</li>
             <div className='flex gap-9'>
               <li className='text-[17px]'>Ph: 419.621.2322</li>
-              <li className='text-[17px]'>Fx: 419.621.2321</li>
+              <li className='text-[17px]'>mail:  info@vitpark.com</li>
             </div>
           </div>
         </ul>

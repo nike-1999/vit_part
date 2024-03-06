@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white  p-3 flex flex-wrap justify-between items-center">
+    <nav className="bg-white  p-3 flex flex-wrap justify-between shadow-xl items-center">
       <div className="flex items-center lg:ml-80">
         <img src={Logo} alt="Logo" className="h-20 sm:mr-9" />
         {/* <ul className={`hidden lg:flex sm:flex space-x-10 font-serif lg:mt-3 text-[16px] ${sidebarOpen ? 'hidden' : 'block'} md:hidden`}>

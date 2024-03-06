@@ -15,22 +15,25 @@ import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 
 const ImageSlider = () => {
   const [currentImage, setCurrentImage] = useState(0);
-  const [imageUrls] = useState([joo1, joo2, joo3, joo4, im5]);
+  const [imageUrls] = useState([joo1, joo2, joo3, joo4, im5,im5]);
   const [titles] = useState([
     "Payment Gateways",
     "Last Mile Connectivity",
     "IT Park",
     "Mobility",
-    "E-business"
+    "E-business",
+    "Semiconductor Solutions"
   ]);
   const [descriptions] = useState([
     "Our advanced payment gateway solutions ensure seamless and secure online transactions for businesses of all sizes. With cutting-edge encryption technologies and robust fraud prevention measures, we empower merchants to accept payments with confidence while providing customers with a smooth and secure checkout experience.",
     "VITPARK understands the critical importance of last mile connectivity in delivering digital services to end-users. Through strategic partnerships and innovative infrastructure solutions, we bridge the gap between networks and end-users, ensuring reliable and high-speed connectivity to homes, businesses, and communities.",
     "VITPARK\'s IT Park provides state-of-the-art infrastructure and facilities for businesses to thrive in the digital age. With high-speed internet connectivity, modern office spaces, conference rooms, and collaborative work environments, our IT Park fosters innovation, creativity, and growth. Join us at VITPARK and experience the ultimate workspace for your digital journey.",
     "In an increasingly mobile-centric world, VITPARK enables businesses to embrace mobility with tailored solutions that cater to the needs of today\'s on-the-go consumers. Whether it\'s developing mobile applications, optimizing websites for mobile devices, or leveraging location-based services, we empower businesses to engage with their audiences anytime, anywhere.",
-    "Empower your business to thrive in the digital landscape with VITPARK\'s comprehensive e-business solutions. From setting up online storefronts and implementing digital payment systems to streamlining supply chain management and enhancing customer engagement, we provide end-to-end support to drive your e-business initiatives forward."
+    "Empower your business to thrive in the digital landscape with VITPARK\'s comprehensive e-business solutions. From setting up online storefronts and implementing digital payment systems to streamlining supply chain management and enhancing customer engagement, we provide end-to-end support to drive your e-business initiatives forward.",
+    "VIT Park, we specialize in providing state-of-the-art semiconductor solutions tailored to meet the evolving needs of industries worldwide. Our advanced semiconductor technologies ensure optimal performance and reliability, catering to businesses of all scales. Leveraging cutting-edge fabrication processes and innovative design methodologies, we empower semiconductor manufacturers to produce high-performance chips with unmatched precision and efficiency."
+  
   ]);
-  const icons = [payment, connectivity, building, webisteiCONS, business];
+  const icons = [payment, connectivity, building, webisteiCONS, business,im5];
 
   const handleIconClick = (imageNumber) => {
     setCurrentImage(imageNumber - 1);
@@ -61,40 +64,28 @@ const ImageSlider = () => {
     });
   };
   return (
-    <div className="relative mb-20 mt-20">
+    <div className="relative">
       <div className="w-full h-[500px] relative">
-      <div className="absolute inset-0 flex justify-between items-center z-10">
+        <div className="absolute inset-0 flex justify-between items-center z-10">
           {/* Navigation Buttons */}
-          <button onClick={prevImage} className='text-white
-           bg-black p-3 rounded-lg lg:px-5 px-2 ml-2  focus:outline-none'>
+          <button onClick={prevImage} className="text-white bg-black p-3 rounded-lg focus:outline-none">
             <LeftOutlined style={{ fontSize: '24px' }} />
           </button>
-          <button onClick={nextImage} className='text-white
-           bg-black p-3 rounded-lg lg:px-5 px-2 mr-2    focus:outline-none'>
+          <button onClick={nextImage} className="text-white bg-black p-3 rounded-lg focus:outline-none">
             <RightOutlined style={{ fontSize: '24px' }} />
           </button>
         </div>
-        <div className="absolute hidden top-0 left-0 right-0 lg:flex md:flex justify-center items-center z-10">
-       
-        </div>
-   
-        <img
-          // src={imageUrls[currentImage]}
-          alt={`Image ${currentImage + 1}`}
-        
-          className="w-full h-full bg-gray-700 object-cover"
-        />
-       
-       
-        <div className="absolute
-         lg:top-40 lg:left-40 md:top-40
-          md:left-20
-         top-20 left-10 transform-translate-y-1/2
-          text-white px-4 py-2">
-          <h2 className="lg:text-4xl md:text-3xl sm:text-2xl mb-4 font-popins font-bold">{titles[currentImage]}</h2>
-          <p className="text-start lg:text-xl md:text-base sm:text-sm lg:w-1/2 w-full">{descriptions[currentImage]}</p>
-        
 
+        <div
+          // style={{ backgroundImage: `url(${imageUrls[currentImage]})` }}
+          className="w-full h-full bg-gray-700 bg-cover bg-center"
+        />
+
+        <div className="absolute   lg:w-full  lg:ml-[400px] text-white px-4 py-2" style={{ bottom: '15%', left: '50%', transform: 'translateX(-50%)' }}>
+          <h2 className="text-3xl ml-10 md:text-2xl lg:text-4xl mb-4 font-bold">{titles[currentImage]}</h2>
+          <p className=" md:text-base
+          w-[285px]   ml-6 text-[18px]
+          lg:text-2xl lg:w-[1000px]  md:max-w-lg lg:max-w-2xl">{descriptions[currentImage]}</p>
         </div>
       </div>
     </div>
